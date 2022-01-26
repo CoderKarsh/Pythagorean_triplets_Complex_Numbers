@@ -32,6 +32,7 @@
     (a^2-b^2)
 """
 
+#The main function
 def py_triplets():
     x = int(input('Enter any whole number:'))
     y = int(input('Enter any whole number:'))
@@ -39,4 +40,8 @@ def py_triplets():
     b = min(x,y)
     print("A Python triplet made using the above integers:\n", "("+str(a**2-b**2)+","+str(2*a*b)+","+str(a**2+b**2)+")")
 
-py_triplets()
+
+a = 'yes'
+while a.lower() in ('yes', 'yeah', 'yep', 'yea', 'y'):
+    py_triplets()
+    a = input("Do you want to continue?:\n")
